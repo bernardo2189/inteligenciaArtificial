@@ -1,2 +1,3 @@
-# Intelig-ncia-Artificial
-material da da faculdade
+# Disciplina de Inteligência Artificial
+
+Material da da faculdade
