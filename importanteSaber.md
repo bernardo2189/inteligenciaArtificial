@@ -8,7 +8,7 @@ Professor falou sobre:
 
 #Aula 2
 
-
+//ordem em que serão ensinadas...
 Sistemas de comportamento Inteligente
  -base de conhecimento
    -Armazenamento de experiencia (PROLOGO)
@@ -16,4 +16,6 @@ Sistemas de comportamento Inteligente
    -metodos de busca
    -cegos: amplitude e profundidade
    -heuristicos: subida de encosta, guloso, A*, Algoritimos Geneticos
--
+- aprendizado de maquina - reconhecer padrões por repetição
+   -redes neurais
+
