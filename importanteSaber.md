@@ -12,10 +12,11 @@ Professor falou sobre:
 Sistemas de comportamento Inteligente
  -base de conhecimento
    -Armazenamento de experiencia (PROLOGO)
- -motor de raciocinio / raciocinio automatizado
-   -metodos de busca
-   -cegos: amplitude e profundidade
-   -heuristicos: subida de encosta, guloso, A*, Algoritimos Geneticos
-- aprendizado de maquina - reconhecer padrões por repetição
-   -redes neurais
+ -motor de raciocinio / raciocinio automatizado (dedução e indução)
+   -metodos de busca e SMA 
+      -cegos: amplitude e profundidade
+      -heuristicos: subida de encosta, guloso, A*, Algoritimos Geneticos
+ -aprendizado de maquina - reconhecer padrões por repetição
+      -redes neurais
+
 
