@@ -51,7 +51,7 @@ Regras de Transição
      t2.push(t1.pop()); 
     } 
       Estado novo = new Estado(t1,t2,t3,"movendo topo 1 para topo t2")
-
+      
       if(!visitados.contains(novo)){
           visitados.add(novo);
       }
@@ -91,3 +91,4 @@ Regras de Transição
 
 
 ["[321][][]","[32][][]"]
+
