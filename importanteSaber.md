@@ -137,6 +137,12 @@ this.j2 = j2;
 
 }
 
+estado novo = new Estado(j1,j2);
+if(!visitados.contains(novo)){
+    visitados.add(novo)
+
+}
+
 public boolean ehMeta(){
 
    return (this.j1 == 2 && this.j2 == 0) || (this.j1 == 0 && this j2 ==2));
@@ -145,4 +151,5 @@ public boolean ehMeta(){
 
 
 }
+
 
