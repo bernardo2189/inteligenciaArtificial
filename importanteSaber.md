@@ -90,5 +90,59 @@ Regras de Transição
 //Visitados - lista ou arvore ou hashmap
 
 
-["[321][][]","[32][][]"]
+Problema das Jarras
+jarra1 suporta 4 litros
+jarra2 suporte 3 litros
+torneira que jorra agua infinitamente
+
+Objetivo: deixar em uma das jarras 2 litros
+
+class Estado{
+
+public void encherj2(){
+this.j2 = 3;
+
+}
+public void esvaziarj2(){
+this.j2 = 0
+
+}
+public void despejarj1_j2(){
+      int j1 = this.j1;
+      int j2 = this.j2;
+
+   if(j1 > (3 - j2)){
+
+     j1 = j1 - (3- j2);
+     j2 = 3
+    
+   }else{
+     j2 = j2 +j1;
+     j1 = 0;
+
+
+   }
+
+}
+
+
+
+int j1;
+int j2;
+
+public Estado(int j1, int j2) {
+
+this.j1 = j1;
+this.j2 = j2;
+
+}
+
+public boolean ehMeta(){
+
+   return (this.j1 == 2 && this.j2 == 0) || (this.j1 == 0 && this j2 ==2));
+
+}
+
+
+}
 
