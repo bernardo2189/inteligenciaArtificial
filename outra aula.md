@@ -23,11 +23,14 @@ Trabalho avaliado é a modelagem:
 
 
 estados:
+
+estado inicial:
 AD
 PD
 ZD
 CD
 
+estado final:
 AE
 PE
 ZE
