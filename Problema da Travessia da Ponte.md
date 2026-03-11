@@ -90,7 +90,7 @@ return.true
 
 
 }
-
+per1(personagem selecionado para mover que pega as informações do escolhido)
 
 
 restrições:
