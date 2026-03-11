@@ -21,6 +21,7 @@ Trabalho avaliado é a modelagem:
 	4) Visitados
 	5) Função objetivo
 ///////////////////////////////////////////////////////
+
 A
 P
 Z
