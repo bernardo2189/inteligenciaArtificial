@@ -22,32 +22,80 @@ Trabalho avaliado é a modelagem:
 	5) Função objetivo
 
 
+At = 1
+Pt = 2
+Zt = 5
+Ct = 10
+
+lad = "d"
+
+tempo = 17
+
+lanterna = true;
+
+
 estados:
 
 estado inicial:
-AD
-PD
-ZD
-CD
+AD = true
+PD = true
+ZD = true
+CD = true
+
+AE = false
+PE = false
+ZE = false
+CE = false
+
 
 estado final:
-AE
-PE
-ZE
-CE
+AD = false
+PD = false
+ZD = false
+CD = false
+
+AE = true
+PE = true
+ZE = true
+CE = true
 
 
 regras de transição:
 
+até 2 pessoas podem passar juntos na ponte ao mesmo tempo, ao menos 1 precisa estar segurando a lanterna enquanto atravessa a ponte.
+a pessoa pode ir para o outro lado da ponte e voltar se quiser quantas vezes necessario.
+toda vez alguem percorre a ponte o tempo dele para atravesar sera diminuido do tempo restante.
+
+
+if( per1.lad == per2.lad){
+return.true
+
+}
+
 
 restrições:
+para cruzar a ponte é preciso que, eles estejam juntos e ao menos um individuo atravessando esteja com a lanterna.
+
+o tempo decorrido não pode ser maior que 17min
+
+visitados:
+Localização deles nos pontos da ponte:
+AD 
+PD  
+ZD  
+CD  
+
+AE  
+PE  
+ZE  
+CE  
 
 
-visitados
+
 
 
 função objetivo:
-
+Levar as 4 pessoas para o  outro lado da ponte.
 
 
 
