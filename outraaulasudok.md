@@ -92,10 +92,20 @@ return false
 regras de transição
 barco apenas pode ir para o outro lado do rio*
 O barco sempre sai de um lado do rio carregando ao menos 1 individuo*
+o barco sempre deixa no lado do rio os induviduos que ele carregava*
 
 Capacidade do barco: 1-2
 
-barco se Move.
+#Barco se Move
+
+if(barcoD == true){
+barcoD == false
+barcoE == true
+}else{
+barcoD == true
+barcoE == false
+
+}
 
 
 problema/objetivo
