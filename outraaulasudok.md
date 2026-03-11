@@ -78,7 +78,7 @@ Estagio final
               MD = 3
               CD = 3
 
-Regras de Transição
+Restrições
 
 if(CE> ME)
 return false
@@ -89,7 +89,17 @@ return false
 if(CD < MD)
 return false
 
+regras de transição
 barco apenas pode ir para o outro lado do rio*
 O barco sempre sai de um lado do rio carregando ao menos 1 individuo*
 
+Capacidade do barco: 1-2
+
+barco se Move.
+
+
+problema/objetivo
+
+Levar os 3 missionarios e 3 canibais para o outro lado do rio.
+relatar os comandos
 
