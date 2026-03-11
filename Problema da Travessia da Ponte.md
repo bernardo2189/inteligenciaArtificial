@@ -20,7 +20,7 @@ Trabalho avaliado é a modelagem:
 	3) Restrições
 	4) Visitados
 	5) Função objetivo
-
+///////////////////////////////////////////////////////
 A
 P
 Z
@@ -68,6 +68,11 @@ if(dois_ao_mesmo_tempo){
 	if(per1.lad == per2.lad){
 
 		if(per1.lanterna == true or per2.lanterna == true){ 
+		  if(per1.t > per2.t){
+		    tempo -= per1.t 
+		  	}else{
+			tempo -= per2.t 
+		  	}
 		return.true
 		}else{
         return.false
@@ -84,6 +89,8 @@ return.true
 
 
 }
+
+
 
 restrições:
 para cruzar a ponte é preciso que, estejam juntos e ao menos um individuo atravessando esteja com a lanterna.
