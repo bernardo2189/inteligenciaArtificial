@@ -32,11 +32,11 @@ P.t = 2
 Z.t = 5
 C.t = 10
 
-lad = "d"
+lad = "d" ou "e"
 
 tempo = 17
 
-lanterna = true;"variavel interna dos A, P,Z,C, para saber quem tem a lanterna"
+lanterna = true;"variavel interna dos A, P, Z, C, para saber quem tem a lanterna"
 
 
 estados:
