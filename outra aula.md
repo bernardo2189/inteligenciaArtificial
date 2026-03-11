@@ -22,42 +22,35 @@ Trabalho avaliado é a modelagem:
 	5) Função objetivo
 
 
-At = 1
-Pt = 2
-Zt = 5
-Ct = 10
+A.t = 1
+P.t = 2
+Z.t = 5
+C.t = 10
 
 lad = "d"
 
 tempo = 17
 
-lanterna = true;
+lanterna = true;"variavel interna dos A, P,Z,C"
 
 
 estados:
 
 estado inicial:
-AD = true
-PD = true
-ZD = true
-CD = true
-
-AE = false
-PE = false
-ZE = false
-CE = false
-
+A.lad = "d"
+P.lad  = "d"
+Z.lad  = "d"
+C.lad  = "d"
+Ped == 4
+Pel == 0
 
 estado final:
-AD = false
-PD = false
-ZD = false
-CD = false
-
-AE = true
-PE = true
-ZE = true
-CE = true
+A.lad = "l"
+P.lad = "l"
+Z.lad = "l"
+C.lad = "l"
+Ped == 0
+Pel == 4
 
 
 regras de transição:
@@ -67,28 +60,30 @@ a pessoa pode ir para o outro lado da ponte e voltar se quiser quantas vezes nec
 toda vez alguem percorre a ponte o tempo dele para atravesar sera diminuido do tempo restante.
 
 
-if( per1.lad == per2.lad){
-return.true
+if(per1.lad == per2.lad){
+
+		if(per1.lanterna == true or per2.lanterna == true){ 
+		return.true
+		}else{
+        return.false
+		}
 
 }
 
 
 restrições:
-para cruzar a ponte é preciso que, eles estejam juntos e ao menos um individuo atravessando esteja com a lanterna.
+para cruzar a ponte é preciso que, estejam juntos e ao menos um individuo atravessando esteja com a lanterna.
+no caso de apenas um atravessar é necessario estar com a lanterna
 
 o tempo decorrido não pode ser maior que 17min
 
 visitados:
 Localização deles nos pontos da ponte:
-AD 
-PD  
-ZD  
-CD  
 
-AE  
-PE  
-ZE  
-CE  
+lad = posição de cada individuo.
+peD = quantia de pessoas no lado direito
+
+Pel= quantia de pessoas no lado esquerdo 
 
 
 
