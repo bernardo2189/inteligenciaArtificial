@@ -21,6 +21,11 @@ Trabalho avaliado é a modelagem:
 	4) Visitados
 	5) Função objetivo
 
+A
+P
+Z
+C
+
 
 A.t = 1
 P.t = 2
@@ -31,24 +36,24 @@ lad = "d"
 
 tempo = 17
 
-lanterna = true;"variavel interna dos A, P,Z,C"
+lanterna = true;"variavel interna dos A, P,Z,C, para saber quem tem a lanterna"
 
 
 estados:
 
 estado inicial:
-A.lad = "d"
-P.lad  = "d"
-Z.lad  = "d"
-C.lad  = "d"
+A.lad = "e"
+P.lad  = "e"
+Z.lad  = "e"
+C.lad  = "e"
 Ped == 4
 Pel == 0
 
 estado final:
-A.lad = "l"
-P.lad = "l"
-Z.lad = "l"
-C.lad = "l"
+A.lad = "d"
+P.lad = "d"
+Z.lad = "d"
+C.lad = "d"
 Ped == 0
 Pel == 4
 
@@ -59,8 +64,8 @@ até 2 pessoas podem passar juntos na ponte ao mesmo tempo, ao menos 1 precisa e
 a pessoa pode ir para o outro lado da ponte e voltar se quiser quantas vezes necessario.
 toda vez alguem percorre a ponte o tempo dele para atravesar sera diminuido do tempo restante.
 
-
-if(per1.lad == per2.lad){
+if(dois_ao_mesmo_tempo){
+	if(per1.lad == per2.lad){
 
 		if(per1.lanterna == true or per2.lanterna == true){ 
 		return.true
@@ -68,8 +73,17 @@ if(per1.lad == per2.lad){
         return.false
 		}
 
+   }else{
+    return.false
+   }
+}else{
+
+if(per1.lanterna){
+return.true
 }
 
+
+}
 
 restrições:
 para cruzar a ponte é preciso que, estejam juntos e ao menos um individuo atravessando esteja com a lanterna.
@@ -82,7 +96,6 @@ Localização deles nos pontos da ponte:
 
 lad = posição de cada individuo.
 peD = quantia de pessoas no lado direito
-
 Pel= quantia de pessoas no lado esquerdo 
 
 
