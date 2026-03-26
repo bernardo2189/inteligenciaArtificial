@@ -77,4 +77,95 @@ metodos de busca (soluções)
                                                                                                                                                      |
                                                                                                                                                      |
                                                                                                                                                     A*(a estrela) g(n) + h(n)
-           
+//////////////////////////////////////////////////////////////////
+fato
+   |
+   sentença ou predicados ou assertiva
+
+   papel(alex, professor)
+   papel(marzari, aluno)
+   papel(gustavo, aluno)
+   papel(gustavo, monitor)
+   estado(luz, ligado)
+   estado(ar-condicionado, desligado)
+   matriculado(dereis, jogos, ia)
+   matriculado(dereis, jogos, design)
+   progenitor(jura, alex)
+   progenitor(jura, tina)
+   
+
+   prolog
+      |
+      argumentos ou parametros
+       |  |  |
+       |  |  objeto
+       |  |    |
+       |  |    minusculo
+       |  |
+       |  literal
+       |     |
+       |     "Matheus dos reis"
+       |
+       variavel
+          |                    teste(Alex, alex)                              
+          |                            |      |
+          letra maiuscula          variavel  objeto
+                 |
+                 1 letra
+/////////////////////////////////////
+
+
+%base.pl
+%fatos
+      %sentencas ou predicados ou assinaturas de funcoes 
+
+
+
+
+jogo("CS", "Counter Strike", 16, "FPS").
+jogo("LOL", "league of Legends", 18, "MOBA").
+jogo("AID", "Alone in the Dark",16, "SU").
+jogo("GTA", "Grand Thief Auto",18, "SB").
+jogo("MC", "Minecraft",0, "SB").
+
+tipo("SB", "Sandbox").
+tipo("FPS", "First Person Shooter").
+tipo("MOBA", "Multiplayer Online Battle Arena").
+tipo("SU", "Survivel").
+
+
+%regras
+       %sentencas com variaveis acompanhadas por :-
+
+indicacaolivre(NomeJogo) :-
+    jogo(_,NomeJogo,Idade,_),
+    Idade == 0.
+    
+
+
+progenitor(hebert, cleber).
+progenitor(hebert, homer).
+progenitor(homer, bart).
+progenitor(homer, lisa).
+progenitor(homer, meg).
+progenitor(marge, bart).
+progenitor(marge, lisa).
+progenitor(marge, meg).
+progenitor(bart, alex).
+progenitor(bart, tina).
+
+
+avo(A,N) :-
+    progenitor(A,P),
+    progenitor(P,N).
+
+
+irmaos(A,B) :- progenitor(P,A),
+               progenitor(P,B),
+               A \= B.
+    
+tio(T,S) :-
+     irmaos(I,T),
+     progenitor(I,S).
+
+cunhados(A,B) :-
