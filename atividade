@@ -1,1 +1,43 @@
+/*
+diciplina("modelagem").
+diciplina("animacao").
+diciplina("motores de jogos 2d").
 
+
+
+pre_requisito("modelagem", "animacao").
+
+ja_cursou("bernardo", "modelagem").
+
+ja_cursou("bernardo", "motores de jogos 2d").
+
+
+
+
+pode_cursar(Aluno, Diciplina):-
+    ja_cursou(Aluno, PreRequisito),
+    pre_requisito(PreRequisito, Diciplina).
+    		
+*/
+/////////////////////////////////////////////////////////////////////
+/*
+
+aluno("bernardo", "programacao", 7).
+aluno("bernardo", "desenho", 4).
+
+
+          
+aprovado(Nome, Diciplina) :-
+    aluno(Nome, Diciplina, Nota),
+          Nota >= 7.
+        
+    
+          
+reprovado(Nome, Diciplina) :-
+    aluno(Nome, Diciplina, Nota),
+          Nota => 7.
+     */
+
+
+
+    
